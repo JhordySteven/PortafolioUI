@@ -1,0 +1,95 @@
+.contenedor{
+    width: 100%;
+    height: 8vh;
+    background: #1F1F1F;
+    overflow: hidden;
+    display: flex;
+}
+.alineacion{
+    width: 85%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "logo menu";
+}
+.logo{
+    grid-area: "logo";
+    color: white;
+    display: flex;
+    margin: auto auto auto 0px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.logo>p{
+    display: block;
+    font-size: 30px;
+}
+.menu{
+    grid-area: "menu";
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 70%;
+}
+.alineacion>.menu>ul{
+    overflow: hidden;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 18.4% 18.4% 18.4% 18.4% 18.4%;
+    grid-gap: 2%;
+}
+.menu>ul>li{
+    list-style: none;
+    display: flex;
+}
+.menu>ul>li>a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+.menu>ul>li:hover{
+    background: #3c87c0;
+}
+/*
+.alineacion>.menu>ul>li{
+    display: block;
+    float: left;
+    padding: 10px 30px;
+}
+.alineacion>.menu>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+.alineacion>.menu>ul>li:hover{
+    background: #1A5276;
+    border-radius: 5px ;
+}*/
+/*.alineacion>.logo{
+    width: 5%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    padding: 0px;
+}
+.alineacion>section>svg{
+    width: 100%;
+    height: 100%;   
+}
+.alineacion>.menu{
+    width: auto;
+    height: 100%;
+    float: right;
+    overflow: hidden;
+    padding: 0px;
+}
+*/

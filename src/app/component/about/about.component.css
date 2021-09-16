@@ -1,0 +1,283 @@
+/*.contenedor{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #D7DBDD;
+    display: flex;
+}
+.contenedor>svg{
+    position: absolute;
+}
+.contener{
+    width: 90%;
+    height: 90%;
+    margin: auto auto;
+}
+.skills{
+    width: 60%;
+    height: 100%;
+    float: left;
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+    overflow: hidden;
+}
+.infoAbout{
+    width: 40%;
+    height: 100%;
+    float: left;
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+    overflow: hidden;
+}
+.imgAbout{
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+}
+.imgAbout>img{
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.infoAbout>h1{
+    margin: 0px;
+    font-size: 15px;
+}
+.skills>h1{
+    margin: 0px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.contener>section>h1{
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+}
+.contener>section>p{
+    padding: 0px 30px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.contener>section>button{
+    border: 0px;
+    padding: 10px 15px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    display: block;
+    margin: auto auto;
+    background: #1A5276;
+    color: white;
+    border-radius: 5px;
+}
+.contener>section>button:hover{
+    cursor: pointer;
+}
+.cuerpo{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.cuerpo>div{
+    width: calc(30%);
+    margin-right: 1.5rem;
+    height: auto;
+    float: left;
+    padding: 0px;
+}
+.tecnologias{
+    width: 100%;
+    height: 10%;
+    display: block;
+    border: 1px solid #909497;
+    text-align: center;
+}
+.tecnologias>section>p{
+    font-size: 20px;
+    color: white;
+}
+.cuerpoList{
+    width: 100%;
+    height: 90%;
+    border: 1px solid #909497;
+    overflow: auto;
+    display: block;
+    border-radius: 0 0 10px 10px;
+}
+.cuerpoList>.seccionList{
+    width: 100%;
+    height: auto;
+}
+.cuerpoList>.seccionList>ul{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.cuerpoList>.seccionList>ul>li{
+    display: block;
+    padding: 5px 10px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 5px;
+    font-size: 20px;
+    overflow: auto;
+}
+.cuerpoList>.seccionList>ul>li:hover{
+    background-color: #1F1F1F ;
+    color: #E5E8E8;
+    cursor: default;
+    transition: all 0.7s;
+}
+.cuerpoList>.seccionList>ul>li>i{
+    font-size: 30px;
+}
+.cuerpoList>.seccionList>ul>li>img{
+    width: 40px;
+    height: 40px;
+}
+.card:hover{
+    animation: 2s click 1;
+    cursor: pointer;
+    color: #17202A;
+}
+@keyframes click{
+    50%{
+        transform:scale(0.95);
+    }
+    75%{
+        transform:scale(1.0);
+    }
+}
+*/
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+    background: #D7DBDD;
+    overflow: hidden;
+}
+.contener{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    display: grid;
+    grid-template-areas: 
+    "info skill";
+}
+.infoAbout{
+    grid-area: "info";
+    display: flex;
+}
+.infoAbout>.centro{
+    width: 70%;
+    height: 85%;
+    margin: auto;
+}
+.infoAbout>.centro>h1{
+    text-align: left;
+    font-family: 'Titillium Web', sans-serif;
+}
+.infoAbout>.centro>p{
+    text-align: left;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.centro>img{
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #1F1F1F;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.centro>a{
+    background: #1F1F1F;
+    text-decoration: none;
+    margin: 30px 0px;
+    padding: 10px;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    border-radius: 10px;
+}
+.centro>a:hover{
+    background: #3c87c0;
+    color: white;
+    transition: all 0.6s;
+}
+
+.skills{
+    grid-area: "skill";
+    display: flex;
+    background: #1F1F1F;
+}
+.skills>.conteiner{
+    width: 90%;
+    height: 85%;
+    margin: auto;
+    border: 1px solid tomato;
+}
+.skills>.conteiner>h1{
+    text-align: left;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+.tecnologias{
+    width: 100%;
+    height: 10%;
+    display: block;
+    border: 1px solid #909497;
+    text-align: center;
+}
+.tecnologias>section>p{
+    font-size: 20px;
+    color: white;
+}
+.cuerpoList{
+    width: 100%;
+    height: 90%;
+    border: 1px solid #909497;
+    overflow: auto;
+    display: block;
+    border-radius: 0 0 10px 10px;
+}
+.cuerpoList>.seccionList{
+    width: 100%;
+    height: auto;
+}
+.cuerpoList>.seccionList>ul{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.cuerpoList>.seccionList>ul>li{
+    display: block;
+    padding: 5px 10px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 5px;
+    font-size: 20px;
+    overflow: auto;
+}
+.cuerpoList>.seccionList>ul>li:hover{
+    background-color: #1F1F1F ;
+    color: #E5E8E8;
+    cursor: default;
+    transition: all 0.7s;
+}
+.cuerpoList>.seccionList>ul>li>i{
+    font-size: 30px;
+}
+.cuerpoList>.seccionList>ul>li>img{
+    width: 40px;
+    height: 40px;
+}
+.card:hover{
+    animation: 2s click 1;
+    cursor: pointer;
+    color: #17202A;
+}

@@ -1,0 +1,21 @@
+footer{
+    background-color: #D7DBDD;
+    color: black;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Titillium Web', sans-serif;
+}
+footer>p{
+    width: 90%;
+    margin: auto auto;
+    padding: 10px 0;
+    display: block;
+    color: black;
+}
+.referent{
+    color: #1A5276;
+}
+.float{
+    float: left;
+}

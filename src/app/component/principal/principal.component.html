@@ -1,0 +1,45 @@
+<!--<div class="contenedor">
+    <div class="triangulo-equilatero-bottom"></div>
+    <section class="containerCuadro" *ngFor="let name of arrayPrincipal">
+        <section class="containerFonts">
+            <section >
+                <p>¡Hola soy</p>
+                <h1>{{name.nombre}}!</h1>
+                <ngx-typed-js  [loop]="true" [strings]="objDescripcion" [typeSpeed] = "100" class="typed" [backDelay] = "2500">
+                    <p class="typing"></p>👨‍💻
+                </ngx-typed-js>
+                <section>
+                    <ul>
+                        <a *ngFor="let z of arrayRedes" [ngStyle]="{'background':z.style}"  [ngClass]="z.clases" href="{{z.ruta}}" title="{{z.titulo}}" target="_blank"></a>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section class="containerImg">
+            <img [src]="name.foto">
+        </section>
+        
+    </section>
+</div>--><!--<a class="containerButton" href="#">Conocer Más</a>-->
+
+<div class="grid-container">
+        <div class="grid-item">
+            <div class="presentacion">
+                <div class="centro" *ngFor="let name of arrayPrincipal">
+                    <p>¡Hola soy</p>
+                    <h1>{{name.nombre}}!</h1>
+                    <ngx-typed-js  [loop]="true" [strings]="objDescripcion" [typeSpeed] = "100" class="typed" [backDelay] = "2500">
+                        <p class="typing"></p>👨‍💻
+                    </ngx-typed-js>
+                    <section>
+                        <ul>
+                            <a *ngFor="let z of arrayRedes" [ngStyle]="{'background':z.style}"  [ngClass]="z.clases" href="{{z.ruta}}" title="{{z.titulo}}" target="_blank"></a>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="image">
+                <img src="../../../assets/imagenes/364-3647671_software-developer-computer-servers-web-others-software-developer.png">
+            </div>
+        </div>
+</div>

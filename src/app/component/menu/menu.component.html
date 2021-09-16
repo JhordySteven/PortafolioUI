@@ -1,0 +1,12 @@
+<div class="contenedor">
+    <div class="alineacion"> 
+        <div class="logo">
+             <p><i class="far fa-keyboard"></i> JhordyCode</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li *ngFor="let menu of objMenu" ><a routerLink="/{{menu.desMaestro}}">{{menu.nombreMaestro}}</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
